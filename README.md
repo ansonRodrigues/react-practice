@@ -1,9 +1,9 @@
-🧩 React Practice Playground
+🧩 #React Practice Playground
 
 This repository is a personal space for practicing and experimenting with React concepts, hooks, and component patterns.
 It’s meant for learning, testing, and building small examples while improving React skills.
 
-🚀 Tech Stack
+🚀 #Tech Stack
 
 React (with Vite or Create React App)
 
@@ -11,7 +11,7 @@ JavaScript (ES6+)
 
 Node.js (for dependency management)
 
-📚 Topics Covered (so far)
+📚 #Topics Covered (so far)
 
 useState – basic state management
 
@@ -29,7 +29,7 @@ Component reusability
 
 (I’ll keep adding more as I learn.)
 
-🧠 Purpose
+🧠 #Purpose
 
 Practice core React hooks and patterns
 
