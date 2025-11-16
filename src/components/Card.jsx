@@ -1,43 +1,41 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className="product-card">
-      
-      {/* Image Section */}
-      <div className="product-image">
-        <img 
-          src="" 
-          alt="Nike NK Court Vision Shoes"
-        />
+    <div className='product-card-container'>
+      <div className="product-card">
 
-        {/* Top Labels */}
-        <span className="badge">Best Seller</span>
+        {/* Image Section */}
+        <div className="product-image">
+          <img
+            src={props.productImage}
+            alt="Nike NK Court Vision Shoes"
+          />
 
-        <img 
-          src="" 
-          alt="Nike Logo" 
-          className="brand-logo"
-        />
+          <img
+            src={props.brandLogo}
+            alt="Nike Logo"
+            className="brand-logo"
+          />
+        </div>
+
+        {/* Product Info */}
+        <div className="product-details">
+          <h2 className="product-title">{props.title}</h2>
+          <p className="product-description">
+            {props.prodDesc}
+          </p>
+        </div>
+
+        {/* Footer */}
+        <div className="product-footer">
+          <span className="price">{props.price}</span>
+          <button className="buy-btn">
+            Buy Now <span className="arrow">↗</span>
+          </button>
+        </div>
+
       </div>
-
-      {/* Product Info */}
-      <div className="product-details">
-        <h2 className="product-title">Nike NK Court Vision</h2>
-        <p className="product-subtitle">Own the Court</p>
-        <p className="product-description">
-          Step back into classic hoops style with a durable leather.
-        </p>
-      </div>
-
-      {/* Footer */}
-      <div className="product-footer">
-        <span className="price">$156</span>
-        <button className="buy-btn">
-          Buy Now <span className="arrow">↗</span>
-        </button>
-      </div>
-
     </div>
   )
 }
