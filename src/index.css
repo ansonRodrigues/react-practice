@@ -7,7 +7,7 @@
 
 /* ========== ROOT VARIABLES ========== */
 :root {
-  --font-main: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  --font-main: "Inter", "Segoe UI", Roboto, sans-serif;
   --color-bg: #f9fafb;
   --color-text: #111827;
   --color-primary: #2563eb;
@@ -16,7 +16,8 @@
 }
 
 /* ========== GLOBAL STYLES ========== */
-html, body {
+html,
+body {
   height: 100%;
   font-family: var(--font-main);
   background-color: var(--color-bg);
@@ -85,7 +86,6 @@ button:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .container {
@@ -94,13 +94,12 @@ button:hover {
 }
 
 /* ===== Card Container ===== */
-.product-card-container{
+.product-card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center; /* optional: makes it look nicer */
   padding: 20px;
-
 }
 
 .product-card {
@@ -109,7 +108,7 @@ button:hover {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -128,7 +127,6 @@ button:hover {
   overflow: hidden;
 }
 
-
 /* ===== Top Labels ===== */
 
 .brand-logo {
@@ -140,6 +138,7 @@ button:hover {
 }
 
 /* ===== Product Info ===== */
+
 .product-details {
   padding: 16px 20px 0;
 }
