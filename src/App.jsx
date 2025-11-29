@@ -2,12 +2,13 @@ import React from "react";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import topShoes from "./data/topshoes";
+import ButtonTest from "./components/ButtonTest";
 
 const App = () => {
   return (
     <>
-      <Navbar userName="Anson" age2={23} />
-      <div className="product-card-container">
+      {/*<Navbar userName="Anson" age2={23} />*/}
+      {/*<div className="product-card-container">
         {topShoes.map((elem) => {
           return (
             <Card
@@ -19,7 +20,8 @@ const App = () => {
             />
           );
         })}
-      </div>
+      </div>*/}
+      <ButtonTest />
     </>
   );
 };
