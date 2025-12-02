@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 
 const ButtonTest = () => {
   return (
     <div>
-        <button onClick={()=>{console.log("sup")}}>Click</button>
+      <button
+        className="btnTest"
+        onClick={() => {
+          console.log("sup");
+        }}
+      >
+        Click
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonTest
+export default ButtonTest;

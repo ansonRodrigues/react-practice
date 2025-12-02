@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Navbar from "./components/Navbar";
 import topShoes from "./data/topshoes";
 import ButtonTest from "./components/ButtonTest";
+import UseStateDemo from "./hooks/UseStateDemo";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           );
         })}
       </div>*/}
-      <ButtonTest />
+      {/*<ButtonTest />*/}
+      <UseStateDemo />
     </>
   );
 };

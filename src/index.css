@@ -23,6 +23,8 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   scroll-behavior: smooth;
+  padding: 5px;
+  padding-left: 8px;
 }
 
 img {
@@ -192,4 +194,8 @@ button:hover {
 
 .arrow {
   font-size: 1rem;
+}
+
+.btnTest {
+  padding: 10px;
 }
