@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import topShoes from "./data/topshoes";
 import ButtonTest from "./components/ButtonTest";
 import UseStateDemo from "./hooks/UseStateDemo";
+import Counter from "./hooks/Counter";
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
         })}
       </div>*/}
       {/*<ButtonTest />*/}
-      <UseStateDemo />
+      {/*<UseStateDemo />*/}
+      <Counter />
     </>
   );
 };
