@@ -11,8 +11,11 @@ const Counter = () => {
     <div>
       <h1 className="count">{count}</h1>
       <div className="contain">
-        <button className="inc" onClick={inc}>Increase</button>
-        <button className="dec"
+        <button className="inc" onClick={inc}>
+          Increase
+        </button>
+        <button
+          className="dec"
           onClick={() => {
             setCount(count - 1);
           }}

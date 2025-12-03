@@ -200,31 +200,30 @@ button:hover {
   padding: 10px;
 }
 
-.count{
+.count {
   text-align: center;
   padding-top: 20px;
-
 }
 
-.contain{
+.contain {
   display: flex;
   justify-content: center;
   gap: 20px;
   padding-top: 100px;
 }
 
-.inc{
+.inc {
   text-align: center;
   height: 100px;
   width: 150px;
   font-size: 20px;
   border-radius: 10px;
 }
-.dec{
+
+.dec {
   text-align: center;
   height: 100px;
   width: 150px;
   font-size: 20px;
   border-radius: 10px;
-
 }
