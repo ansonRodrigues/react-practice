@@ -24,8 +24,8 @@ const App = () => {
         })}
       </div>*/}
       {/*<ButtonTest />*/}
-      {/*<UseStateDemo />*/}
-      <Counter />
+      <UseStateDemo />
+      {/*<Counter />*/}
     </>
   );
 };
