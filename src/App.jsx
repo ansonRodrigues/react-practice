@@ -6,6 +6,7 @@ import ButtonTest from "./components/ButtonTest";
 import UseStateDemo from "./hooks/UseStateDemo";
 import Counter from "./hooks/Counter";
 import Form from "./components/Form";
+import Notes from "./components/Notes";
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
       {/*<ButtonTest />*/}
       {/*<UseStateDemo />*/}
       {/*<Counter />*/}
-      <Form />
+      {/*<Form />*/}
+      <Notes />
     </>
   );
 };
