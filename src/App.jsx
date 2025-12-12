@@ -7,6 +7,7 @@ import UseStateDemo from "./hooks/UseStateDemo";
 import Counter from "./hooks/Counter";
 import Form from "./components/Form";
 import Notes from "./components/Notes";
+import UseEffectDemo from "./hooks/UseEffectDemo";
 
 const App = () => {
   return (
@@ -29,7 +30,8 @@ const App = () => {
       {/*<UseStateDemo />*/}
       {/*<Counter />*/}
       {/*<Form />*/}
-      <Notes />
+      {/*<Notes />*/}
+      <UseEffectDemo />
     </>
   );
 };
