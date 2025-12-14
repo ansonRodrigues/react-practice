@@ -8,6 +8,8 @@ import Counter from "./hooks/Counter";
 import Form from "./components/Form";
 import Notes from "./components/Notes";
 import UseEffectDemo from "./hooks/UseEffectDemo";
+import { Link, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -31,7 +33,15 @@ const App = () => {
       {/*<Counter />*/}
       {/*<Form />*/}
       {/*<Notes />*/}
-      <UseEffectDemo />
+      {/*<UseEffectDemo />*/}
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   );
 };
