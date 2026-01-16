@@ -13,12 +13,14 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
   return (
     <>
-      {/*<Navbar userName="Anson" age2={23} />*/}
-      {/*<div className="product-card-container">
+      <ThemeContext>
+        {/*<Navbar userName="Anson" age2={23} />*/}
+        {/*<div className="product-card-container">
         {topShoes.map((elem) => {
           return (
             <Card
@@ -31,23 +33,24 @@ const App = () => {
           );
         })}
       </div>*/}
-      {/*<ButtonTest />*/}
-      {/*<UseStateDemo />*/}
-      {/*<Counter />*/}
-      {/*<Form />*/}
-      {/*<Notes />*/}
-      {/*<UseEffectDemo />*/}
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        {/*<ButtonTest />*/}
+        {/*<UseStateDemo />*/}
+        {/*<Counter />*/}
+        {/*<Form />*/}
+        {/*<Notes />*/}
+        {/*<UseEffectDemo />*/}
+        <div>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </ThemeContext>
     </>
   );
 };
