@@ -16,6 +16,7 @@
 }
 
 /* ========== GLOBAL STYLES ========== */
+/*
 html,
 body {
   height: 100%;
@@ -26,6 +27,7 @@ body {
   padding: 5px;
   padding-left: 8px;
 }
+*/
 
 img {
   max-width: 100%;
@@ -113,7 +115,9 @@ button:hover {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .product-card:hover {
