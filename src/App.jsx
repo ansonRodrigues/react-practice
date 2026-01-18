@@ -39,11 +39,11 @@ const App = () => {
         {/*<Form />*/}
         {/*<Notes />*/}
         {/*<UseEffectDemo />*/}
-        <div>
+        {/*<div>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
-        </div>
+        </div>*/}
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Home />} />
