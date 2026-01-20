@@ -1,29 +1,42 @@
-import { Grid, Box, Typography } from "@mui/material";
-import StatCard from "./StatCard";
+import React from "react";
+import { Box, Toolbar } from "@mui/material";
+import Sidebar from "./SideBar";
 import AdminHeader from "./AdminHeader";
-// Import icons here...
+import { Grid, Typography } from "@mui/material"; // Assuming you have your StatCards here
 
 const AdminDashboard = () => {
   return (
-    <div>
-      <AdminHeader />
-      <Box sx={{ p: 4 }}>
-        <Typography variant="h5" sx={{ mb: 3, fontWeight: "bold" }}>
-          Dashboard Overview
-        </Typography>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={3}>
-            <StatCard
-              title="Total Revenue"
-              value="$45,231"
-              percentage="+12.5%"
-              color="success"
-            />
+    <Box sx={{ display: "flex" }}>
+      {/* 1. The Sidebar (Left) */}
+      <Sidebar />
+
+      {/* 2. The Main Content Wrapper (Right) */}
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          bgcolor: "#F4F7FE", // Light background for content area
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {/* Header goes inside the main wrapper so it sits next to sidebar */}
+        <AdminHeader />
+
+        {/* The Actual Page Content */}
+        <Box sx={{ p: 3 }}>
+          <Typography variant="h4" sx={{ mb: 3, fontWeight: "bold" }}>
+            Dashboard Overview
+          </Typography>
+
+          {/* Your Grid of Cards */}
+          <Grid container spacing={3}>
+            {/* <StatCard ... /> components go here */}
           </Grid>
-          {/* Add more Grid items for other cards */}
-        </Grid>
+        </Box>
       </Box>
-    </div>
+    </Box>
   );
 };
 
