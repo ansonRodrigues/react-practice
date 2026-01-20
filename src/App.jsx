@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ThemeContext from "./context/ThemeContext";
+import AdminDashboard from "./pages/admin-dashboard/AdminDashboard";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </ThemeContext>
     </>
