@@ -58,21 +58,6 @@ const Sidebar = () => {
     >
       {/* 1. Logo / Brand Section */}
       <Box sx={{ p: 3, display: "flex", alignItems: "center", gap: 1 }}>
-        {/* Simple "P" logo circle if you want it, otherwise just text */}
-        {/*<Box
-          sx={{
-            width: 32,
-            height: 32,
-            bgcolor: "#3B82F6",
-            borderRadius: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontWeight: "bold",
-          }}
-        >
-          P
-        </Box>*/}
         <Typography variant="h6" fontWeight="bold">
           Admin Panel
         </Typography>
