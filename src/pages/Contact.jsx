@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import AxiosDemo from "../components/AxiosDemo";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <div>Contact</div>
+      <div>
+        <AxiosDemo />
+      </div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
