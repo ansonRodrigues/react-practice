@@ -20,7 +20,6 @@ const Dropdownsec = ({
 }) => {
   return (
     <FormControl fullWidth={fullWidth} error={error} disabled={disabled}>
-      {/* Static label on top */}
       {label && (
         <Typography variant="body2" sx={{ mb: 0.5 }}>
           {label}

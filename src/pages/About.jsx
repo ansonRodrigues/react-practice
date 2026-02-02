@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Dropdown from "../components/Dropdown";
+//import Dropdown from "../components/Dropdown";
 import Dropdownsec from "../components/Dropdownsec";
 
 const About = () => {
@@ -14,16 +14,6 @@ const About = () => {
 
   return (
     <div>
-      <h1>About</h1>
-      <Dropdown
-        label="Country"
-        value={country}
-        //size="medium"
-        fullWidth={false}
-        onChange={(e) => setCountry(e.target.value)}
-        options={countryOptions}
-        helperText="Please select a country"
-      />
       <div>
         <Dropdownsec
           label="Country"
@@ -31,7 +21,7 @@ const About = () => {
           onChange={(e) => setCountry(e.target.value)}
           options={countryOptions}
           placeholder="Select country"
-          error={!country}
+          //error={!country}
           helperText={!country ? "Country is required" : ""}
         />
       </div>
