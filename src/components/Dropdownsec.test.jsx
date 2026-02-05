@@ -1,6 +1,7 @@
 import { expect } from "vitest";
 import Dropdownsec from "./Dropdownsec";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 const mockOptions = [
   {
@@ -46,10 +47,30 @@ describe("Dropdownsec Component", () => {
         value=""
         helperText="This field is required"
         options={mockOptions}
-        placeholder="Select Shoes"
+        //placeholder="Select Shoes"
         onChange={() => {}}
       />,
     );
     expect(screen.getByText("This field is required")).toBeInTheDocument();
+  });
+
+  test("shows all options correctly", async () => {
+    const user = userEvent.setup();
+    render(
+      <Dropdownsec
+        label="Shoes"
+        value=""
+        options={mockOptions}
+        onChange={() => {}}
+      />,
+    );
+
+    const select = screen.getByRole("combobox");
+    //fireEvent.mouseDown(select);
+    //async way
+    await user.click(select);
+
+    expect(await screen.findByText("Nike")).toBeInTheDocument();
+    expect(await screen.findByText("Adidas")).toBeInTheDocument();
   });
 });
