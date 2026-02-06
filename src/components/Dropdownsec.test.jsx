@@ -1,4 +1,4 @@
-import { expect } from "vitest";
+import { expect, vi } from "vitest";
 import Dropdownsec from "./Dropdownsec";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
@@ -72,5 +72,23 @@ describe("Dropdownsec Component", () => {
 
     expect(await screen.findByText("Nike")).toBeInTheDocument();
     expect(await screen.findByText("Adidas")).toBeInTheDocument();
+  });
+
+  test("Calls onChange when opton is selected", async () => {
+    const user = userEvent.setup();
+    const handleChange = vi.fn();
+    render(
+      <Dropdownsec
+        label="Shoes"
+        value=""
+        options={mockOptions}
+        onChange={handleChange}
+      />,
+    );
+
+    const select = screen.getByRole("combobox");
+    await user.click(select);
+    await user.click(screen.getByText("Nike"));
+    expect(handleChange).toHaveBeenCalled();
   });
 });
