@@ -8,11 +8,12 @@ describe("math functions", () => {
   test("subtraction", () => {
     expect(subtract(7, 4)).toBe(3);
   });
-  test("subtraction to be neagtive", () => {
+  test("subtraction to be negative", () => {
     expect(subtract(2, 7)).toBe(-5);
   });
   test("Output should be a number", () => {
-    expect(typeof add(3, 5)).toBe("number");
+    //better way
+    expect(add(3, 5)).toBeTypeOf("number");
     expect(typeof subtract(5, 4)).toBe("number");
   });
 });
