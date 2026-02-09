@@ -91,4 +91,16 @@ describe("Dropdownsec Component", () => {
     await user.click(screen.getByText("Nike"));
     expect(handleChange).toHaveBeenCalled();
   });
+
+  test("check if disabled works", () => {
+    render(
+      <Dropdownsec
+        label="Shoes"
+        value=""
+        options={mockOptions}
+        onChange={() => {}}
+      />,
+    );
+    expect(screen.getByRole("combobox")).toBeDisabled;
+  });
 });
