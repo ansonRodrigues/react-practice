@@ -18,6 +18,7 @@ import AdminDashboard from "./pages/admin-dashboard/AdminDashboard";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import CounterRedux from "./redux/CounterRedux";
+import FrontUi from "./pages/project/FrontUi";
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/counter" element={<CounterRedux />} />
+            <Route path="/project" element={<FrontUi />} />
           </Routes>
         </ThemeContext>
       </Provider>
