@@ -19,6 +19,7 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import CounterRedux from "./redux/CounterRedux";
 import FrontUi from "./pages/project/FrontUi";
+import CustomerTable from "./pages/customers/CustomerTable";
 
 const App = () => {
   return (
@@ -58,6 +59,7 @@ const App = () => {
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/counter" element={<CounterRedux />} />
             <Route path="/project" element={<FrontUi />} />
+            <Route path="/customer" element={<CustomerTable />} />
           </Routes>
         </ThemeContext>
       </Provider>
